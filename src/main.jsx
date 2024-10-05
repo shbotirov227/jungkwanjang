@@ -4,11 +4,13 @@ import { createRoot } from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import './i18n';
+import { Analytics } from "@vercel/analytics/react";
 
 createRoot(document.getElementById("root")).render(
-	<StrictMode>
-		{/* <ChakraProvider> */}
-		<App />
-		{/* </ChakraProvider> */}
-	</StrictMode>
+    <StrictMode>
+        {/* <ChakraProvider> */}
+        <App />
+        <Analytics />
+        {/* </ChakraProvider> */}
+    </StrictMode>
 );
