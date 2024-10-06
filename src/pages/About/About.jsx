@@ -194,28 +194,28 @@ const About = () => {
                     <Image src={Img3} className="max-xl:w-[50%] max-lg:w-[40%] max-md:w-[80%]" alt="about-img3" />
                 </Box>
 
-                <Box className="w-[80%] m-auto flex relative items-center justify-between gap-14 mb-20">
-                    <Box className="w-2/4 z-10 relative m-auto text-center" style={{ backgroundImage: 'url("@/assets/Background2.png")' }}>
-                        <Image src={Background} className="min-w-[170%] h-[150%] absolute -z-10 -left-[3rem] -top-[2rem]" />
+                <Box className="w-[80%] m-auto flex relative items-center justify-between gap-14 mb-20 max-lg:flex-col max-lg:w-full max-lg:mb-10">
+                    <Box className="w-2/4 z-10 relative m-auto text-center max-lg:w-full max-lg:overflow-hidden max-lg:order-2" style={{ backgroundImage: 'url("@/assets/Background2.png")' }}>
+                        <Image src={Background} className="min-w-[170%] h-[150%] absolute -z-10 -left-[3rem] -top-[2rem] max-lg:hidden" />
                         <Image src={Img4} className="m-auto mb-14" />
                         <Heading as="h3" className="mb-3 font-semibold text-2xl">JungKwanJang</Heading>
                         <Heading as="h4" className="mb-5 text-xl"><b>Jung</b> means “rightness”</Heading>
                         <Heading as="h4" className="mb-5 text-xl"><b>Kwan</b> means “government”</Heading>
                         <Heading as="h5" className="mb-5 text-xl"><b>Jang</b> means “factories”</Heading>
                     </Box>
-                    <Box className="w-2/4 z-10">
+                    <Box className="w-2/4 z-10 max-lg:w-full max-lg:mt-4">
                         <Image src={Brandname} className="w-[50%] m-auto mb-10" />
 
                         <Heading as="h3" className="mb-4 font-semibold text-2xl">Therefore, JungKwanJang means “Products rightfully made in government-supervised factories”</Heading>
-                        <Text as="p" className="mb-5 text-[15px] leading-7">
+                        <Text as="p" className="mb-5 text-[15px] leading-7 max-lg:w-full">
                             The taegeuk mark in the logo of <b>JungKwanJang</b> signifies its status as a nationally renowned item from Korea. The vivid red color of the logo reflects the intensity of Jung Kwan Jang's dedication to producing highly dependable red ginseng products.
                         </Text>
                     </Box>
 
                 </Box>
-                    <video className="z-10" src="@/assets/video-carousel.mp4" width={300} height={200}>
+                <video className="z-10 max-lg:hidden" src="@/assets/video-carousel.mp4" width={300} height={200}>
                     <source src="@/assets/video-carousel.mp4" />
-                    </video>
+                </video>
             </Box>
         </div>
     );
