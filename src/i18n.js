@@ -58,5 +58,4 @@ i18n.use(Backend)
             caches: ["cookie", "localStorage"],
         },
     });
-
 export default i18n;

@@ -1,43 +1,38 @@
-import { Box } from "@chakra-ui/react";
+/* eslint-disable react/prop-types */
+import { Box, Heading } from "@chakra-ui/react";
 import i18next from "i18next";
-import { useState } from "react";
+// import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
-import { IoMenu, IoCloseOutline } from "react-icons/io5";
+// import { IoCloseOutline } from "react-icons/io5";
+// import { IoMenu, IoCloseOutline } from "react-icons/io5";
+import { Link, useLocation } from "react-router-dom";
 
 const Modal = ({ toggle, isOpen }) => {
 
     const { t } = useTranslation();
-	function changeLang(lang) {
-		i18next.changeLanguage(lang)
-	}
-    const [active, setActive] = useState(false);
+
+    function changeLang(lang) {
+        i18next.changeLanguage(lang)
+    }
+
+    const location = useLocation();
+    const isActive = (path) => location.pathname === path;
+
     return (
-        <>
-            {/* <Box display={{ base: "block", md: "none" }} onClick={toggle}>
-                {isOpen ? <IoCloseOutline /> : <IoMenu />}
-            </Box> */}
+        <Box className={isOpen ? "block" : "hidden"}>
+            <Box as="ul" className="overlay-menu shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] p-5 bg-[white] absolute w-[80%] h-[350px] transition-all rounded-2xl z-[15] left-0 right-0 top-[20rem] bottom-0 m-auto">
+                <Heading as="li"><Link className={`${isActive("/") ? "text-red" : ""} inline-block w-full text-center hover:bg-[#f1f1f1] hover:text-red  py-4 transition-all font-medium`} to="/">{t("header.home")}</Link></Heading>
+                <Heading as="li"><Link className={`${isActive("/about") ? "text-red" : ""} inline-block w-full text-center hover:bg-[#f1f1f1] hover:text-red py-4 transition-all font-medium`} to="/about">{t("header.about")}</Link></Heading>
+                <Heading as="li"><Link className={`${isActive("/ginseng") ? "text-red" : ""} inline-block w-full text-center hover:bg-[#f1f1f1] hover:text-red py-4 transition-all font-medium`} to="/ginseng">{t("header.ginseng")}</Link></Heading>
+                <Heading as="li"><Link className={`${isActive("/contact") ? "text-red" : ""} inline-block w-full text-center hover:bg-[#f1f1f1] hover:text-red py-4 transition-all font-medium`} to="/contact">{t("header.contact")}</Link></Heading>
 
-            <div className={`overlay ${active ? "active" : "deactive"}`}>
-
-                <ul className="overlay-menu">
-                    <li><a className="overlay-link" href="/">{t("header.home")}</a></li>
-                    <li><a className="overlay-link" href="#about">{t("header.about")}</a></li>
-                    <li><a className="overlay-link" href="#tours">{t("header.tours")}</a></li>
-                    <li><a className="overlay-link" href="#contact">{t("header.contact")}</a></li>
-
-                    <div className="overlay-langs">
-                        <button onClick={e => { changeLang("uz") }} className="overlay-lang" to="/">UZ</button>
-                        <button onClick={e => { changeLang("en") }} className="overlay-lang" to="/">ENG</button>
-                        <button onClick={e => { changeLang("ru") }} className="overlay-lang" to="/">RU</button>
-
-                    </div>
-                    {/* <div className="icons">
-                        <Link className="overlay-lang" target="_blank" rel="noreferrer" to="https://t.me/adkhamov_987"><FaTelegram /></Link>
-                        <Link className="overlay-lang" target="_blank" rel="noreferrer" to="https://instagram.com/aurum_avia"><FaSquareInstagram /></Link>
-                    </div> */}
-                </ul>
-            </div>
-        </>
+                <Box className="overlay-langs block text-center pt-5">
+                    <button onClick={() => changeLang("uz")} className="px-3 py-2 text-sm font-semibold">UZ</button>
+                    <button onClick={() => changeLang("en")} className="px-3 py-2 text-sm font-semibold">ENG</button>
+                    <button onClick={() => changeLang("ru")} className="px-3 py-2 text-sm font-semibold">RU</button>
+                </Box>
+            </Box>
+        </Box>
     )
 }
 
