@@ -6,6 +6,10 @@ import Img5 from "../assets/about-card-img5.webp";
 import { useTranslation } from "react-i18next";
 
 const DataComponent = () => {
+
+    // "textRight2": "The three leaves above the taegeuk symbolize the perfect harmony of heaven, earth, and mankind. The three roots of ginseng represent the love of human life and the vitality of nature. Together, the taegeuk and the three leaves signify the balance between the mind, body, and the energy of nature.",
+    // "textRight3": "The name 'JungKwanJang' stands for 120 years of craftsmanship, reliability, and excellence. The quality of the products has been maintained for generations, winning the hearts of those who care about their health."
+
     const { t } = useTranslation();
 
     const data = [

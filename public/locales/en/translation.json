@@ -3,9 +3,95 @@
         "home": "Home",
         "about": "About Us",
         "ginseng": "Ginseng",
-        "contact": "Contact Us"
+        "contact": "Contact"
     },
+    
     "footer": {
-        "text": "World's renowned, Korea Ginseng Corporation(KGC), with its subsidiary lines JungKwanJang, KORESELECT, GoodBASE, Donginbi is the #1 ginseng brand, with over 120 years of horticultural and scientific expertise. Official distributor of “JUNG KWAN JANG” products in the Republic of Uzbekistan"
+        "title1": "CONTACT US",
+        "title2": "Stay Connected",
+        "title3": "CUSTOMER SUPPORT",
+
+        "text1": "The world's renowned Korea Ginseng Corporation (KGC), with its subsidiary lines JungKwanJang, KORESELECT, GoodBASE, Donginbi, is the #1 ginseng brand, with over 120 years of horticultural and scientific expertise. Official distributor of 'JUNG KWAN JANG' products in the Republic of Uzbekistan.",
+        "text2": "Official distributor of 'JUNG KWAN JANG' products in the Republic of Uzbekistan.",
+
+        "link1": "Chekhov Street, 7a, Tashkent, Uzbekistan",
+        "link2": "Phone:",
+        "link3": "Email:",
+        "link4": "Products",
+        "link5": "Contact Us",
+        "link6": "About Us",
+        "link7": "Ginseng"
+    },
+
+    "about": {
+        "block1": {
+            "mainTitle": "CheongKwanJang to JungKwanJang",
+
+            "title1": "Why 'JungKwanJang'?",
+            "title2": "Our Commitments Remain the Same",
+            "title3": "Looking Towards the Future",
+            "title4": "Your Health, Our Science, One Future – JungKwanJang.",
+
+            "text1": "We are excited to announce an important milestone in our journey – the rebranding of our name from 'CheongKwanJang' to 'JungKwanJang'. This is not just a new name; it's a symbolic moment that underscores our commitment to excellence, innovation, and care for the well-being of our communities.",
+            "text2": "The name 'JungKwanJang' reflects our desire to preserve our heritage while also looking towards the future. It symbolizes 'central', 'primary', or 'most important', highlighting our role in your health as a key source of energy and well-being. 'Jung' emphasizes our core mission to provide premium, high-quality health products. Meanwhile, 'KwanJang' continues to honor our tradition of craftsmanship and reliability in production.",
+            "text3": "Although our name is changing, our commitment to you remains unchanged. JungKwanJang will continue to harness the power of nature combined with scientific innovation to offer products that support your health and well-being. We remain dedicated to purity, quality, and efficacy, as well as our promise to be your trusted partner in health.",
+            "text4": "This rebranding marks the beginning of a new chapter in our journey. As JungKwanJang, we are even more determined to explore innovative solutions, push the boundaries of health science, and offer you products that enhance your quality of life. We look forward to the future and are deeply grateful for the opportunity to continue serving you under this new name.",
+            "text5": "Thank you for your continued support and trust. Together, let's embark on this renewed journey towards health and well-being."
+        },
+        "block2": {
+            "mainTitle": "Nature's Legacy,",
+            "mainTitleRed": "The World’s #1 Ginseng Brand – JungKwanJang",
+
+            "title1": "Our Mission",
+            "title2": "THE MOST TRUSTED GINSENG BRAND",
+
+            "text1": "(正官庄), a flagship herbal supplement brand with a 120-year history, is popular in more than 40 countries worldwide and is recognized as the #1 ginseng brand in the world according to Euromonitor’s 2012-2021 report. The global retail market for ginseng was valued at approximately USD 490 million as of 2021, with the JungKwanJang brand of the Korea Ginseng Corporation leading the way with a 48.3% market share and sales volume of about USD 2.203 billion in the vitamins and dietary supplements category.",
+            "text2": "“Making people’s lives better every day by providing them with the best products from traditionally grown and carefully selected Korean Red Ginseng to support their health and well-being. We devote all our efforts to helping our customers face any of life’s challenges.”",
+            "text3": "Korea Ginseng Corporation (KGC), with its subsidiary brands JungKwanJang, Koreselect, GoodBASE, and Donginbi, is the world’s #1 ginseng brand, boasting over 120 years of expertise in horticulture and science.",
+            "text4": "KGC brands use only the finest ginseng in combination with the highest-quality herbs and ingredients to offer superior products that meet everyone’s needs. Every JungKwanJang product is certified by the Ministry of Food and Science of the Republic of Korea and contains only premium ginseng extract from roots that have been allowed to mature for a full six years for optimal results."
+        },
+
+        "aboutCard": {
+            "title1": "100% Contract Farming and Strict Ingredient Safety Control",
+            "title2": "The World’s Largest Infrastructure for Red Ginseng Production",
+            "title3": "Rigorous Safety Testing and Strict Quality Control",
+            "title4": "The World’s Largest Research Team for Ginseng and Red Ginseng",
+            "title5": "Continuous Research on Efficacy, Technology, and Safety",
+
+            "span1": "Sourcing the Highest-Quality Ingredients",
+            "span2": "Korean Ginseng Factory with 120 Years of Traditional Production and Craftsmanship",
+            "span3": "GMP, HACCP, ISO 22000, HALAL, KOSHER",
+            "span4": "The Global Mecca of Red Ginseng Research",
+
+            "text1": "JungKwanJang uses only the finest, eco-friendly ingredients grown on local farms. The premium ginseng is sourced through contract farming with farmers who possess outstanding agricultural expertise. Additionally, farms are inspected to ensure ingredient safety, and only those farms that meet the standards are allowed to grow ginseng.",
+            "text2": "Two Korean ginseng factories located in Buyeo and Wonju are the largest centers of ginseng production on the planet. With 120 years of traditional production and craftsmanship, they have developed unmatched standards of JungKwanJang Red Ginseng through a rigorous quality control system. In line with South Korea's 4th Industrial Revolution, these factories are being transformed into ‘smart factories’.",
+            "text3": "Our Korean ginseng production facilities have officially been recognized for their high quality by receiving certifications for Good Manufacturing Practice (GMP), Hazard Analysis Critical Control Point (HACCP), International Organization for Standardization (ISO) 22000 accreditation, as well as HALAL and KOSHER certifications.",
+            "text4": "JungKwanJang is known as a premium-quality brand, largely due to its continuous research and development. The Korea Ginseng Research Institute, managed by the Korea Ginseng Corporation (KGC), comprises over 130 leading researchers. The institute has registered more than 240 patents related to red ginseng and has published over 310 scientific papers since 2000, making it the most productive research institute in this field.",
+            "text5": "The Korea Ginseng Research Institute is dedicated to improving efficacy, safety, and technology through research and analysis. This includes studying the scientific and medical benefits of red ginseng and finding new ways to apply it. The institute sets a high standard for red ginseng research and testing and has already proven 4 out of 6 key effects of JungKwanJang Red Ginseng. These effects include improving circulation, enhancing memory, antioxidant action, and supporting women’s health during menopause."
+        },
+        "block3": {
+            "since": "Since 1899",
+            "mainTitle": "Korea’s Royal Palace Premium Brand",
+            "mainTitleRed": "JungKwanJang",
+
+            "title1": "Our Mission",
+            "title2": "THE MOST TRUSTED GINSENG BRAND",
+
+            "text1": "The origin of the Korea Ginseng Corporation dates back to 1899, when the SamJeongGwa department was opened in the royal palace of the Korean Empire.",
+            "text2": "Since then, the state has controlled the production and cultivation of red ginseng through a vertically integrated system to ensure quality and oversight.",
+            "text3": "For over a century, the worldwide fame of Korean Red Ginseng has spread under the name 'JungKwanJang'. To distinguish it from counterfeits, the name 'JungKwanJang' was created, where 'Jung' means official product, and 'KwanJang' symbolizes quality and reliability.",
+            "text4": "That is why 'JungKwanJang' continues to be a renowned brand of red ginseng to this day."
+        },
+
+        "brandname": {
+            "title1": "Jung Kwan Jang",
+            "title2": "Thus, JungKwanJang means 'Products made rightfully in factories under state control'",
+
+            "textLeft1": "means 'righteousness'",
+            "textLeft2": "means 'government'",
+            "textLeft3": "means 'factories'",
+
+            "textRight1": "The taegeuk symbol on the JungKwanJang logo symbolizes its status as a nationally recognized product from Korea. The bright red color of the logo reflects the intensity of JungKwanJang Red Ginseng, providing health benefits and balance."
+        }
     }
 }
