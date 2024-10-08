@@ -135,7 +135,7 @@ const Contact = () => {
                     <Image src={Img} alt="contact-img" />
 
                     <Box className="mb-2 border-b border-[white]">
-                        <Heading as="h4" className="text-[white] my-6 font-semibold text-md">KGC Corporate Office</Heading>
+                        <Heading as="h4" className="text-[white] my-6 font-semibold text-md">KGC Official distributor</Heading>
                         <Text as="p" display="flex" alignItems="center" fontSize="smaller" color="white" mb="15">
                             <FaLocationDot size={15} className="mr-3" />
                             <Link target="_blank" href="https://yandex.uz/maps/-/CDTDqZpD">
