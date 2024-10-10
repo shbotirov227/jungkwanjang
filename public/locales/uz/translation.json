@@ -95,5 +95,31 @@
 
             "textRight1": "Jung Kwan Jang logotipidagi taeguk belgisi uning Koreyadan chiqqan milliy tan olingan mahsulot maqomini bildiradi. Logotipning yorqin qizil rangi JungKwanJang kompaniyasining ishonchli qizil jenshen mahsulotlarini ishlab chiqarishga bo‘lgan sadoqatini ifodalaydi."
         }
+    },
+
+    "ginseng": {
+
+    },
+
+    "contact": {
+        "heading": "Biz bilan bog'laning",
+        "description": "Siz izlayotgan narsani topolmadingizmi? Mijozlarni qo‘llab-quvvatlash xizmatimiz bilan bog‘laning. Bizning vakilimiz sizning xabaringizni 24 ish soati ichida tekshiradi.",
+        "firstName": "Ism",
+        "lastName": "Familiya",
+        "phoneNumber": "Telefon raqami",
+        "messagePlaceholder": "Xabaringiz",
+        "submitButton": "Yuborish",
+        "officialDistributor": "Rasmiy distribyutori",
+        "address": "Chexov ko'chasi 7a, Toshkent, O'zbekiston",
+        "phone": "Telefon",
+        "email": "Email",
+        "openingHours": "Ish vaqti",
+        "monFri": "Dush - Jum : 9:00 - 17:00",
+        "saturday": "Shanba: Yopiq",
+        "sunday": "Yakshanba: Yopiq",
+        "stayConnected": "Aloqada bo'ling",
+        "telegram": "https://t.me/tmrtgl",
+        "instagram": "https://www.instagram.com/jungkwanjanguzb",
+        "whatsapp": "/"
     }
 }

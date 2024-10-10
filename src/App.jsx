@@ -4,6 +4,7 @@ import Layout from "@/components/Layout/Layout";
 
 import "./App.css";
 import "./styles/style.css";
+import { ToastContainer } from "react-toastify";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     </Routes>
                 </Layout>
             </Router>
+            <ToastContainer />
         </div>
     );
 }

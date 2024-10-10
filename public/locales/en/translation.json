@@ -14,7 +14,7 @@
         "text1": "The world's renowned Korea Ginseng Corporation (KGC), with its subsidiary lines JungKwanJang, KORESELECT, GoodBASE, Donginbi, is the #1 ginseng brand, with over 120 years of horticultural and scientific expertise. Official distributor of 'JUNG KWAN JANG' products in the Republic of Uzbekistan.",
         "text2": "Official distributor of 'JUNG KWAN JANG' products in the Republic of Uzbekistan.",
 
-        "link1": "Chekhov Street, 7a, Tashkent, Uzbekistan",
+        "link1": "Hospital wing, 7/7A, Mirabad district, Tashkent",
         "link2": "Phone:",
         "link3": "Email:",
         "link4": "Products",
@@ -93,5 +93,32 @@
 
             "textRight1": "The taegeuk symbol on the JungKwanJang logo symbolizes its status as a nationally recognized product from Korea. The bright red color of the logo reflects the intensity of JungKwanJang Red Ginseng, providing health benefits and balance."
         }
+    },
+
+    "ginseng": {
+        
+    },
+    
+
+    "contact": {
+        "heading": "Contact Us",
+        "description": "Can’t find what you’re looking for? Contact our Customer Care Service. Our support representative will check your message within 24 business hours.",
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phoneNumber": "Phone Number",
+        "messagePlaceholder": "Your Message",
+        "submitButton": "Submit",
+        "officialDistributor": "Official distributor of",
+        "address": "Hospital wing, 7/7A, Mirabad district, Tashkent",
+        "phone": "Phone",
+        "email": "Email",
+        "openingHours": "Opening Hours",
+        "monFri": "Mon - Fri : 9am - 5pm",
+        "saturday": "Saturday: Closed",
+        "sunday": "Sunday: Closed",
+        "stayConnected": "Stay Connected",
+        "telegram": "https://t.me/tmrtgl",
+        "instagram": "https://www.instagram.com/jungkwanjanguzb",
+        "whatsapp": "/"
     }
 }
