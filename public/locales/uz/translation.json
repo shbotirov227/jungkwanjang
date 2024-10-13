@@ -23,6 +23,39 @@
         "link7": "Jenshen"
     },
 
+    "home": {
+        "title": "JungKwanJangga xush kelibsiz",
+        "text": "Salomatlik va farovonlik uchun yuqori darajadagi Koreya qizil jenshen mahsulotlari",
+
+        "cardMainTitle": "Mahsulotlarimiz bilan tanishing",
+
+        "title2": "Koreya qizil jenshen bilan sog'lig'ingizni mustahkamlang",
+        "text2": "120 yildan ortiq jenshen tajribasining afzalliklarini his eting.",
+
+        "cardTitle": {
+            "1": "Hong Sam Won",
+            "2": "Anor tayoqchalari",
+            "3": "Everytime V"
+        },
+
+        "cardText": {
+            "1": "Immunitet va energiya darajasini oshirish uchun kuchli qizil jenshen ekstrakti.",
+            "2": "Kundalik energiyani qo'llab-quvvatlash uchun iste'mol qilish oson qizil jenshen tayoqchalari.",
+            "3": "Hayotiylikni oshirish uchun yuqori sifatli qizil jenshendan tayyorlangan tetiklantiruvchi tonik."
+        },
+
+        "cardQuantity": {
+            "1": "50 ml 30 dona",
+            "2": "10 ml 30 dona",
+            "3": "10 ml 30 dona"
+        },
+
+        "btn": {
+            "1": "Learn More",
+            "2": "Shop Now"
+        }
+    },
+
     "about": {
         "block1": {
             "mainTitle": "Cheong Kwan Jangdan Jung Kwan Jangga",
@@ -98,7 +131,103 @@
     },
 
     "ginseng": {
+        "mainTitle": "JungKwanJang",
+        "mainTitleBold": "Jenshen hikoyasi",
+        "red": {
+            "1": "Koreya Jensheni"
+        },
 
+        "title": {
+            "1": "Ming yillik hikmat",
+            "2": "Jenshen hikoyasi",
+            "3": "KOREYA JENSHENI",
+            "4": "TAKRORLANMAS JENSHEN",
+            "5": "Koreys Jensheni nima?",
+            "6": "Koreya Jensheni vs Koreya Qizil Jensheni vs Amerika Jensheni vs Xitoy Jensheni vs Yaponiya Jensheni",
+            "7": "Qayta ishlanmagan jenshen an'anaviy koreys usuli bo'yicha qayta ishlanganida jenshenga aylanadi",
+            "8": "*Jenshenning asosiy faol moddasi bo'lgan kislotali polisakkarid saratonga qarshi immunitetni oshirishga, xolesterinni inhibe qilishga yordam beradi.",
+            "9": "Sog'liqni saqlash samaradorligi",
+            "10": "Hammaga shifobaxsh o't",
+            "11": "Sog'liqni saqlash samaradorligi",
+            "12": "Jenshen bilan bog'liq 2839 ta tadqiqot maqolalari",
+            "13": "Jenshenning sog'liqqa ta'siri bilan bog'liq 51 ta tadqiqot yo'nalishlari",
+            "14": "40 ta davlat Jenshenning sog'liqqa ta'siri bo'yicha tadqiqot o'tkazdi",
+            "15": "Tananggizni sog'lom tuting",
+            "16": "Immun tizimingizni kuchaytiring",
+            "17": "Chidamlilikni oshiradi va charchoqqa qarshi kurashishga yordam beradi",
+            "18": "Sog'lom qon aylanishini ta'minlaydi",
+            "19": "Sog'lom kognitiv salomatlikni qo'llab-quvvatlaydi",
+            "20": "Teri parvarishi uchun foydalari",
+            "21": "Antioksidantlarning mo'l zaxirasini ta'minlaydi",
+            "22": "Jenshenning Sharq tabobatida ettita foydasi nazariyasi",
+            "23": "Chidamlilikni oshirish",
+            "24": "Metabolizmning tartibsizliklarini normallashtirish",
+            "25": "Ruhiy beqarorlikni tinchlantirish",
+            "26": "Butun tananing funktsiyasini yaxshilash",
+            "27": "Detoksifikatsiya va terining holatini yaxshilash",
+            "28": "Taloq va oshqozonni mustahkamlash",
+            "29": "Nafas olish tizimini oziqlantirish va mustahkamlash",
+            "30": "Odamlar Jenshen haqida nima deyishadi"
+        },
+
+        "text": {
+            "1": "Jenshenning paydo bo'lishi Koreyadan ming yil oldin, uning ta'siri birinchi marta kashf etilganda kuzatilishi mumkin. Bu o'simlikni pishirish va quritish orqali amalga oshirildi. 1123 yilda Goryoga tashrif buyurgan Song sulolasining elchisi bo'lgan Syuanxe tomonidan yozilgan ''jīngjīng'' sayohat inshosida jenshenning kuchi hujjatlashtirilgan. U bugungi kunda ham Sharq va G'arb tibbiyot hamjamiyatlari tomonidan tasdiqlangan sog'liq uchun foydalari bilan mashhur. Aslini olganda, bu tarix va ilm-fan uyg'unligi bilan yaratilgan salomatlik uchun oziq-ovqat.",
+            "2": "Jenshen o'zining ko'plab foydali komponentlari tufayli keng tarqalgan. Jenshen oilasida koreys jenshen o'zining ta'sirchan darajada saponinlar va saponin bo'lmaganlari bilan ajralib turadi, ularni boshqa navlarda topib bo'lmaydi.",
+            "3": "Koreya jenshenida bir qator qimmatli saponinlar, shu jumladan Rb1 mavjud bo'lib, ular sog'lom jigar va miya faoliyatini tartibga solishga yordam beradi. Shuningdek, u saponin bo'lmagan tarkibiy qismlarda ko'p bo'lib, eng muhimlaridan biri xolesterin darajasini boshqarishi isbotlangan kislotali polisakkariddir.",
+            "4": "Koreys Qizil Jensheni - bu an'anaviy bug'lash va quritish jarayonidan o'tib, uni qizil rangga aylantirgan Koreya jenshenining versiyasi. Bu ildizning foydasini oshirish va uni himoya qilish uchun amalga oshiriladi. Barcha jenshen o'simliklari foydalari jihatidan teng emas; Koreys qizil jenshenida ko'p miqdorda saponinlar mavjud, Amerika, xitoy va yapon jenshenlarida esa 15 dan kam saponinlar mavjud. Saponinlar jenshenning imkoniyatlari uchun javobgar bo'lgan tabiiy birikmalardir.",
+            "5": "Haqiqiy jenshenni yaratish - bu san'at, mahorat va ilmiy bilimlarning kombinatsiyasi. Biz har bir dalani ekish uchun tayyorlash uchun ikki yil vaqt ajratamiz, keyin har bir o'simlik eng yaxshi bo'lgunga qadar o'sadi va keyin qayta ekishdan oldin maydonga o'n yil davomida kuzda qolishiga ruxsat beramiz.",
+            "6": "'Panax' atamasi jenshenning ilmiy nomi bo'lib, yunon tilidan olingan bo'lib, 'hamma shifo' deb tarjima qilinadi. O'simliklarning bu o'ziga xos jinsida ginsenozidlar deb ataladigan saponinlar mavjud bo'lib, ular boshqa o'simliklarda uchramaydi. Har bir ildizda saponinlarning maksimal miqdorini olish uchun biz jenshenning to'liq etuklikka o'sishiga imkon beramiz. Koreya turmush tarzi va madaniyatining bir qismi bo'lgan jenshen bir qator tabiiy sog'liq afzalliklariga ega.",
+            "7": "Qon aylanishini rag'batlantirish va tana funktsiyalarini qo'llab-quvvatlash orqali Jenshen tanamizga kasalliklarga qarshi kurashish uchun kuch beradi; Bu tanamizni kuchliroq qilishning bir usuli.",
+            "8": "Ilmiy nomi: Panax Jenshen Manba: Milliy Biotexnologiya Axborot Markazi (www.ncbi.nlm.nih.gov)",
+            "9": "Charchoqqa chidamlilik, xotira funktsiyalari, qon aylanishini yaxshilash, antioksidant funktsiyalar va boshqalar.",
+            "10": "AQSh, Kanada, Buyuk Britaniya, Germaniya, Italiya, Janubiy Koreya, Xitoy, Yaponiya, Rossiya va boshqalar",
+            "11": "Koreys jenshenining sog'liq uchun ko'plab afzalliklari bor, ularni bu erda topish mumkin Milliy Biotexnologiya Axborot Markazi ",
+            "12": "Koreys jenshen tanangizga kiradigan begona jismlarga immunitet tizimining javobini oshiradi.",
+            "13": "Kofeinga muqobil koreys jenshen kunni o'tkazishga yordam beradigan tabiiy energiya quvvatidir.",
+            "14": "Koreya jenshenidagi ingredientlar yurak va arteriyalarni sog'lom saqlashga yordam beradigan qon aylanishini oshirishga yordam beradi.",
+            "15": "Sog'lom miyani saqlashga yordam beradi va kognitiv funktsiyalarga yordam beradi.",
+            "16": "Eng so'nggi zamonaviy texnologiyalardan foydalangan holda, biz terini parvarish qilishda koreys jenshenining xuddi shunday 'barcha shifobaxsh' ta'sirini qo'llashimiz mumkin.",
+            "17": "Antioksidantlar tanangizni erkin radikallardan himoya qilishda katta rol o'ynaydi. Koreys jenshenlari tanangizda rivojlanishi mumkin bo'lgan kasalliklarning oldini olishda hujayralaringizga yordam beradigan antioksidantlarga boy.",
+            "18": "Kuchni tiklashga yordam beradi va chidamlilikni oshiradi",
+            "19": "Qon ishlab chiqarishni rag'batlantiradi va pulsni barqarorlashtiradi",
+            "20": "Ko'chalarni qisqartiradi va ongning muvozanatini barqarorlashtiradi",
+            "21": "Tana suyuqliklarini to'ldiradi va chanqoqni engillashtiradi",
+            "22": "Tanadagi zahardan xalos bo'lib, shish yoki qaynoqlarni yo'q qiladi",
+            "23": "Ovqat hazm qilish organlarini mustahkamlaydi va diareyani to'xtatadi",
+            "24": "O'pkani mustahkamlaydi va yo'talni to'xtatadi"
+        },
+
+        "li": {
+            "1": "(1) Doktor. V. D. Petkov (Bolgariya) va X. Nitta (Yaponiya) - Oddiy agin tufayli kognitiv degradatsiyani yaxshilash bo'yicha tadqiqot",
+            "2": "(2) Professor Nakanishi (Yaponiya) - trombotsitlar agregatsiyasini inhibe qilish va mikrovaskulyar qon ta'minotini yaxshilash bo'yicha tadqiqot",
+            "3": "(3) Doktor E. Bombardelli (Italiya) - Panax jenshenning charchoqqa qarshi va stressga qarshi xususiyatlarini o'rganish",
+            "4": "(4) S. J. Fulder (Angliya) - Qariyalarning jismoniy funktsiyalarini yaxshilash bo'yicha tadqiqot",
+            "5": "(5) Doktor Kang, Sang Mu (AQSh) - respirator sinsitial virus infektsiyasiga qarshi jenshen ekstraktining antiviral faolligini o'rganish"
+        },
+
+        "chinese": {
+            "1": "補氣救脫",
+            "2": "益血復脈",
+            "3": "養心安神",
+            "4": "生津止渴",
+            "5": "托毒合瘡",
+            "6": "健脾止瀉",
+            "7": "補肺定喘"
+        },
+
+        "customerTitle": {
+            "1": "Julia Barlund, KGC mijozi",
+            "2": "Julia Barlund, KGC mijozi",
+            "3": "Julia Barlund, KGC mijozi"
+        },
+
+        "customerText": {
+            "1": "'EVERYTIME' - bu mening kundalik ishim. Har safar energiyada katta yuksalish taklif qiladi va sog'lig'i va farovonligini birinchi o'ringa qo'ymoqchi bo'lganlar uchundir",
+            "2": "'EVERYTIME' - bu mening kundalik ishim. Har safar energiyada katta yuksalish taklif qiladi va sog'lig'i va farovonligini birinchi o'ringa qo'ymoqchi bo'lganlar uchundir",
+            "3": "'EVERYTIME' - bu mening kundalik ishim. Har safar energiyada katta yuksalish taklif qiladi va sog'lig'i va farovonligini birinchi o'ringa qo'ymoqchi bo'lganlar uchundir"
+        },
+
+        "btn": "Koreya qizil jensheniga qiziqasizmi? Aksiyalarga obuna bo'lish uchun shu yerni bosing"
     },
 
     "contact": {

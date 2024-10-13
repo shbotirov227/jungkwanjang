@@ -14,13 +14,46 @@
         "text1": "The world's renowned Korea Ginseng Corporation (KGC), with its subsidiary lines JungKwanJang, KORESELECT, GoodBASE, Donginbi, is the #1 ginseng brand, with over 120 years of horticultural and scientific expertise. Official distributor of 'JUNG KWAN JANG' products in the Republic of Uzbekistan.",
         "text2": "Official distributor of 'JUNG KWAN JANG' products in the Republic of Uzbekistan.",
 
-        "link1": "Hospital wing, 7/7A, Mirabad district, Tashkent",
+        "link1": "Gospitalniy microdistrict, 7/7A, Mirobod district, Tashkent, Uzbekistan",
         "link2": "Phone:",
         "link3": "Email:",
         "link4": "Products",
         "link5": "Contact Us",
         "link6": "About Us",
         "link7": "Ginseng"
+    },
+
+    "home": {
+        "title": "Welcome to JungKwanJang",
+        "text": "Premium Korean Red Ginseng Products for Health and Wellness",
+
+        "cardMainTitle": "Explore Our Products",
+
+        "title2": "Boost Your Health with Korean Red Ginseng",
+        "text2": "Experience the benefits of over 120 years of ginseng expertise.",
+
+        "cardTitle": {
+            "1": "Hong Sam Won",
+            "2": "Pomegranate sticks",
+            "3": "Everytime V"
+        },
+
+        "cardText": {
+            "1": "Powerful red ginseng extract to boost your immunity and energy levels.",
+            "2": "Easy-to-consume red ginseng sticks for daily energy support.",
+            "3": "Refreshing tonic made with premium red ginseng to enhance vitality."
+        },
+
+        "cardQuantity": {
+            "1": "50 ml 30 pcs",
+            "2": "10 ml 30 pcs",
+            "3": "10 ml 30 pcs"
+        },
+
+        "btn": {
+            "1": "Learn More",
+            "2": "Shop Now"
+        }
     },
 
     "about": {
@@ -96,10 +129,111 @@
     },
 
     "ginseng": {
-        
+        "mainTitle": "JungKwanJang",
+        "mainTitleBold": "The Ginseng Story",
+        "red": {
+            "1": "Korean Ginseng"
+        },
+
+        "title": {
+            "1": "The Wisdom of a Thousand Years",
+            "2": "The Ginseng Story",
+            "3": "KOREAN GINSENG",
+            "4": "UNPROCESSED GINSENG",
+            "5": "What is Korean Ginseng?",
+            "6": "Korean Ginseng Vs Korean Red Ginseng Vs American Ginseng Vs Chinese Ginseng Vs Japanese Ginseng",
+            "7": "Unprocessed ginseng becomes ginseng when processed according to the traditional Korean method",
+            "8": "*Acidic polysaccharide, the main active ingredient of ginseng, helps to enhance anti-cancer immunity, to inhibit cholesterol",
+            "9": "Health Efficacies of ",
+            "10": "The All-Healing Herb",
+            "11": "Health Efficacies of ",
+            "12": "2,839 Research Papers Associated with Ginseng",
+            "13": "51 Research Areas Related to the Health Effects of Ginseng",
+            "14": "40 Countries Conducted Research on the Health Effects of Ginseng",
+            "15": "Maintain A Healthy Body",
+            "16": "Boost Your Immune System",
+            "17": "Builds Stamina & Helps To Fight Fatigue",
+            "18": "Promotes Healthy Blood Circulation",
+            "19": "Supports Healthy Cognitive Health",
+            "20": "Benefits for Skincare",
+            "21": "Delivers A Plentiful Supply Of Antioxidants",
+            "22": "The Theory Of The Seven Benefits Of Ginseng in Oriental Medicine",
+            "23": "Stamina Boosting",
+            "24": "Normalizing Metabolism Irregularities",
+            "25": "Calming Mental Instability",
+            "26": "Improving The Whole Body Function",
+            "27": "Detoxification and Improving Skin Conditions",
+            "28": "Strengthening Spleen and Stomach",
+            "29": "Nourish and Strengthen Respiratory System",
+            "30": "What People Are Saying About Ginseng",
+            "31": "",
+            "32": ""
+        },
+
+        "text": {
+            "1": "Ginseng's beginnings can be traced back to Korea one thousand years ago when its effects were first discovered. This was done by cooking and drying the plant. In the travel essay '高麗圖經' written by Xuanhe in 1123, who was an envoy of the Song Dynasty visiting Goryo, the power of ginseng was documented. It is still renowned today for its health benefits which have been verified by both Eastern and Western medical communities. In essence, it is a food for health created by the combination of history and science.",
+            "2": "Ginseng is widely desired for its numerous beneficial components. In the ginseng family, Korean ginseng stands out for its impressive levels of saponins and non-saponins that can't be found with other varieties.",
+            "3": "Korean Ginseng contains a range of valuable saponins including Rb1 which may help regulate healthy liver and brain function. It is also abundant in non-saponin ingredients, one of the most notable being acidic polysaccharide which has been proven to manage cholesterol levels.",
+            "4": "Korean Red Ginseng is a version of Korean Ginseng that has been through a traditional steaming and drying process, turning it red. This is done to enhance the root's benefits and protect it. Not all ginseng plants are equal in terms of their benefits; Korean Red Ginseng contains an abundance of saponins while American, Chinese, and Japanese Ginseng have less than 15 saponins. Saponins are naturally occurring compounds that are responsible for the capabilities of Ginseng.",
+            "5": "Crafting genuine ginseng is a combination of artistry, skill and scientific knowledge. We devote two years to getting each field ready for planting, then let each plant grow until it is at its best, and then permit the area to lie fallow for a decade before replanting.",
+            "6": "The term 'Panax' is the scientific name for ginseng, which is derived from the Greek language and translates to 'all-healing'. This particular genus of plants contains saponins called ginsenosides, a class of compounds that cannot be found in any other plant. We make sure to allow our ginseng to grow to full maturity in order to acquire the maximum amount of saponins in each root. Part of the Korean lifestyle and culture, ginseng boasts a number of natural health advantages.",
+            "7": "By promoting blood circulation and supporting bodily functions, Ginseng provides our body with the power to fight diseases; It is a way to make our body stronger.",
+            "8": "Scientific name : Panax Ginseng Source : National Center for Biotechnology Information (www.ncbi.nlm.nih.gov)",
+            "9": "Fatigue resistance, memory functions, enhancement of blood circulation, antioxidant functions, and more.",
+            "10": "USA, Canada, UK, Germany, Italy,South Korea, China, Japan,Russia and others",
+            "11": "Korean Ginseng has many health benefits that can be found here National Center for Biotechnology Information ",
+            "12": "Korean Ginseng increases your immune system's response to foreign objects that enter your body.",
+            "13": "An alternative to caffeine, Korean Ginseng is an all-natural energy boost to help you get through your day.",
+            "14": "The ingredients in Korean Ginseng helps to increase blood circulation aiding in maintaining a healthy heart and arteries.",
+            "15": "Helps to maintain a healthy brain and help with cognitive functions.",
+            "16": "Utilizing the latest in modern technology, we're able to apply the same 'all-healing' effects of Korean Ginseng to skincare.",
+            "17": "Antioxidants play a big role in protecting your body from free radicals. Korean Ginseng is full of antioxidants that assist your cells in preventing diseases that may develop in your body.",
+            "18": "Helps recover strength and promotes stamina",
+            "19": "Promotes the production of blood and stabilizes the pulse",
+            "20": "Reduces strees and stabilizes the equilibrium of the mind",
+            "21": "Complements body fluids and alleviates thirst",
+            "22": "Gets rid of the poison in the body and resolves swellings or boils",
+            "23": "Strengthens the digestive organs and stops diarrthea",
+            "24": "Strengthens the lungs and stops coughs",
+            "25": "",
+            "26": "",
+            "27": "",
+            "28": ""
+        },
+
+        "li": {
+            "1": "(1) Drs. V. D. Petkov (Bulgaria) and H. Nitta (Japan) - Study on the improvement of cognitive degradation caused by normal agin",
+            "2": "(2) Professor Nakanishi (Japan) - Study on the inhibition of platelet aggregation and improvement of microvascular blood supply",
+            "3": "(3) Dr. E. Bombardelli (Italy) - Study on the anti-fatigue and anti-stress properties of panax ginseng",
+            "4": "(4) S. J. Fulder (England) - Study on improvement of physical functions of the elderly",
+            "5": "(5) Dr. Kang, Sang Moo (USA) - Study on antiviral activity of ginseng extract against respiratory syncytial virus infection"
+        },
+
+        "chinese": {
+            "1": "補氣救脫",
+            "2": "益血復脈",
+            "3": "養心安神",
+            "4": "生津止渴",
+            "5": "托毒合瘡",
+            "6": "健脾止瀉",
+            "7": "補肺定喘"
+        },
+
+        "customerTitle": {
+            "1": "Julia Barlund, KGC Customer",
+            "2": "Julia Barlund, KGC Customer",
+            "3": "Julia Barlund, KGC Customer"
+        },
+
+        "customerText": {
+            "1": "'EVERYTIME' is my daily routine. Everytime offers a great boost in energy and is for those who wish to prioritize their health and wellness",
+            "2": "'EVERYTIME' is my daily routine. Everytime offers a great boost in energy and is for those who wish to prioritize their health and wellness",
+            "3": "'EVERYTIME' is my daily routine. Everytime offers a great boost in energy and is for those who wish to prioritize their health and wellness"
+        },
+
+        "btn": "Interested in Korean Red Ginseng? Click Here To Subscribe To Promotions"
     },
     
-
     "contact": {
         "heading": "Contact Us",
         "description": "Can’t find what you’re looking for? Contact our Customer Care Service. Our support representative will check your message within 24 business hours.",
