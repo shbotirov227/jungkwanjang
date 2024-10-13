@@ -48,7 +48,7 @@ const Home = () => {
 
                 {/* Product Showcase */}
                 <section className="container mx-auto py-16 px-4">
-                    <h2 className="text-4xl font-bold text-center mb-12">{t("home.cardMaintitle")}</h2>
+                    <h2 className="text-4xl font-bold text-center mb-12">{t("home.cardMainTitle")}</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
                         {products.map((product) => (
                             <div key={product.id} className="bg-gray-100 border border-[#efefef] p-6 rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300">
