@@ -60,7 +60,7 @@ const Contact = () => {
             <ToastContainer />
             <Box className="flex flex-wrap justify-center gap-10 py-12">
                 <Box
-                    className="min-[1124px]:w-[40%] max-2xl:w-[50%] max-xl:w-[70%] max-md:w-[85%] w-[50%] text-center rounded-lg p-6 border border-[#c4c4c4] shadow-lg"
+                    className="max-2xl:w-[50%] max-xl:w-[70%] max-md:w-[85%] w-[50%] text-center rounded-lg p-6 border border-[#c4c4c4] shadow-lg"
                     w={{ base: "100%", md: "60%", lg: "40%" }}
                 >
                     <Heading as="h3" className="mb-4 font-semibold text-lg">{t("contact.heading")}</Heading>
@@ -139,7 +139,7 @@ const Contact = () => {
                 </Box>
 
                 <Box
-                    className="max-[1124px]:w-[40%] max-2xl:w-[35%] max-xl:w-[70%] max-md:w-[85%]  bg-[#444444] min-[1024px]:w-[30%] p-12 pt-7 rounded-lg"
+                    className="max-2xl:w-[35%] max-xl:w-[60%] max-md:w-[85%] bg-[#444444] p-12 pt-7 rounded-lg"
                     w={{ base: "100%", md: "60%", lg: "30%" }}
                 >
                     <Box className="mb-2 border-b border-[white]">
