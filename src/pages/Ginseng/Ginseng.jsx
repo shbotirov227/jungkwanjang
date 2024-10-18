@@ -221,7 +221,7 @@ const Ginseng = () => {
                 <div className="container">
                     <Heading className="max-lg:text-xl text-center font-semibold text-2xl mb-7" as="h3">{t("ginseng.title.30")}</Heading>
 
-                    <Box className="max-md:flex-col flex items-center justify-between mb-14">
+                    <Box className="max-md:flex-col flex items-start justify-between mb-14">
                         <Box className="w-[30%] max-md:mb-8 max-sm:text-center max-md:w-full">
                             <Image className="w-[100%] max-md:w-[60%] flex items-center m-auto mb-5" src={Img13} alt="ginseng-img13" />
                             <Heading className="max-[1280px]:text-xl text-2xl font-semibold mb-3" as="h3">{t("ginseng.customerTitle.1")}</Heading>

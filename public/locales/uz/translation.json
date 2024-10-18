@@ -34,7 +34,7 @@
 
         "cardTitle": {
             "1": "Hong Sam Won",
-            "2": "Anor tayoqchalari",
+            "2": "Pomegranate sticks",
             "3": "Everytime V"
         },
 
@@ -73,10 +73,10 @@
         },
 
         "block2": {
-            "mainTitle": "Tabiatdan kelgan meros,",
+            "mainTitle": "Tabiat tuhfasi",
             "mainTitleRed": "Dunyoning №1 Jenshen brendi – JungKwanJang",
 
-            "title1": "Bizning missiyamiz",
+            "title1": "Bizning vazifamiz",
             "title2": "ENG ISHONCHLI JENSHEN BRENDI",
 
             "text1": "JungKwanJang (正官庄) – 120 yillik tarixga ega bo‘lgan o‘simlik qo‘shimchalari brendi, 40 dan ortiq mamlakatlarda sevilgan va 2012-2021 yillardagi Euromonitor hisobotiga ko‘ra dunyodagi eng mashhur Jenshen brendi sifatida tanilgan. 2021 yil holatiga ko‘ra umumiy jenshen chakana bozori taxminan 490 million AQSh dollariga baholangan va Koreya Jenshen Korporatsiyasining JungKwanJang brendi 48,3% bozor ulushi bilan 2 203 million AQSh dollari atrofida sotuvga ega bo‘lgan holda yetakchilik qilgan.",
@@ -132,14 +132,14 @@
 
     "ginseng": {
         "mainTitle": "JungKwanJang",
-        "mainTitleBold": "Jenshen hikoyasi",
+        "mainTitleBold": "Jenshen tarixi",
         "red": {
             "1": "Koreya Jensheni"
         },
 
         "title": {
             "1": "Ming yillik hikmat",
-            "2": "Jenshen hikoyasi",
+            "2": "Jenshen tarixi",
             "3": "KOREYA JENSHENI",
             "4": "TAKRORLANMAS JENSHEN",
             "5": "Koreys Jensheni nima?",
@@ -190,7 +190,7 @@
             "17": "Antioksidantlar tanangizni erkin radikallardan himoya qilishda katta rol o'ynaydi. Koreys jenshenlari tanangizda rivojlanishi mumkin bo'lgan kasalliklarning oldini olishda hujayralaringizga yordam beradigan antioksidantlarga boy.",
             "18": "Kuchni tiklashga yordam beradi va chidamlilikni oshiradi",
             "19": "Qon ishlab chiqarishni rag'batlantiradi va pulsni barqarorlashtiradi",
-            "20": "Ko'chalarni qisqartiradi va ongning muvozanatini barqarorlashtiradi",
+            "20": "Stressni kamaytiradi va ongning muvozanatini barqarorlashtiradi",
             "21": "Tana suyuqliklarini to'ldiradi va chanqoqni engillashtiradi",
             "22": "Tanadagi zahardan xalos bo'lib, shish yoki qaynoqlarni yo'q qiladi",
             "23": "Ovqat hazm qilish organlarini mustahkamlaydi va diareyani to'xtatadi",
@@ -217,17 +217,17 @@
 
         "customerTitle": {
             "1": "Julia Barlund, KGC mijozi",
-            "2": "Julia Barlund, KGC mijozi",
-            "3": "Julia Barlund, KGC mijozi"
+            "2": "KGC global ilmiy-tadqiqot markazi boshlig'i",
+            "3": "Professor Jae Youl Cho, Sungkyunkvan universiteti, molekulyar immunologiya (Ph.D.)"
         },
 
         "customerText": {
             "1": "'EVERYTIME' - bu mening kundalik ishim. Har safar energiyada katta yuksalish taklif qiladi va sog'lig'i va farovonligini birinchi o'ringa qo'ymoqchi bo'lganlar uchundir",
-            "2": "'EVERYTIME' - bu mening kundalik ishim. Har safar energiyada katta yuksalish taklif qiladi va sog'lig'i va farovonligini birinchi o'ringa qo'ymoqchi bo'lganlar uchundir",
-            "3": "'EVERYTIME' - bu mening kundalik ishim. Har safar energiyada katta yuksalish taklif qiladi va sog'lig'i va farovonligini birinchi o'ringa qo'ymoqchi bo'lganlar uchundir"
+            "2": "KGC ning Ginseng R&D markazida 184+ jenshen patenti va 420+ jenshen tadqiqotlari bilan 130 dan ortiq taniqli tadqiqotchilar mavjud. Biz tadqiqotimizni xun takviyesi tarkibidagi turli ingredientlar bo'yicha kengaytirmoqdamiz",
+            "3": "Koreys jensheni 2000 yillik tarixga ega bo'lgan ta'siri isbotlangan dunyodagi eng yaxshi o'simlik dorisidir. Mening tadqiqotlarim shuni ko'rsatdiki, polisaxaridlar makrofag hujayralarini faollashtiradi, natijada immunitet kuchayadi."
         },
 
-        "btn": "Koreya qizil jensheniga qiziqasizmi? Aksiyalarga obuna bo'lish uchun shu yerni bosing"
+        "btn": "Bizning mahsulot sizga qiziqmi ? Buyurtma qilish uchun bu yerni bosing"
     },
 
     "contact": {
