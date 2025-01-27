@@ -8,22 +8,39 @@ import Img from "@/assets/contact-img.avif";
 import { useTranslation } from "react-i18next";
 import { toast, ToastContainer } from "react-toastify";
 
+const mapSrc = "https://yandex.uz/map-widget/v1/-/CDTDqZpD";
+
 const Contact = () => {
     const [formData, setFormData] = useState({ name: "", surname: "", phone: "", message: "" });
     const { t } = useTranslation();
+    const inputRef = useRef(null);
+    
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
-    // console.log(handleChange)
+    const notify = () => toast.success("Xabar yuborildi !", {
+        position: "top-center",
+        delay: 2000
+    });
 
-    const notify = () => toast.success("Xabar yuborildi !")
-
+    const isValidForm = () => {
+        if (!formData.name || !formData.surname || !formData.phone || !formData.message) {
+            toast.error("Barcha maydonlarni to'ldiring!");
+            return false;
+        }
+        if (!/^\+\d{12}$/.test(formData.phone)) {
+            toast.error("Telefon raqami noto'g'ri!");
+            return false;
+        }
+        return true;
+    };
 
     // fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
     const handleSubmit = (e) => {
         e.preventDefault();
+        if (!isValidForm()) return;
 
         fetch("https://jungkwanjang-backend.vercel.app/send-message", {
             method: "POST",
@@ -35,13 +52,22 @@ const Contact = () => {
             .then((response) => response.json())
             .then((data) => {
                 if (data.message) {
-                    toast.success("Xabar yuborildi!");
+                    toast.success("Xabar yuborildi!", {
+                        position: "top-center",
+                        delay: 2000
+                    });
                     setFormData({ name: "", surname: "", phone: "", message: "" });
                 } else {
-                    toast.error("Xabar yuborishda xato!");
+                    toast.error("Xabar yuborishda xato!", {
+                        position: "top-center",
+                        delay: 2000
+                    });
                 }
             })
-            .catch((error) => toast.error("Xato:", error));
+            .catch((error) => toast.error("Xato:", error, {
+                position: "top-center",
+                delay: 2000
+            }));
     };
 
     return (
@@ -69,6 +95,7 @@ const Contact = () => {
                                     _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
                                     borderRadius="7px"
                                     padding="10px 20px"
+                                    onChange={handleChange}
                                 />
                                 <Input
                                     required
@@ -80,10 +107,15 @@ const Contact = () => {
                                     _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
                                     borderRadius="7px"
                                     padding="10px 20px"
+                                    onChange={handleChange}
                                 />
                             </div>
 
-                            <InputMask mask="+\9\9\8 (99) 999-99-99">
+                            <InputMask
+                                ref={inputRef}
+                                mask="+\9\9\8 (99) 999-99-99"
+                                onChange={handleChange}
+                            >
                                 {(inputProps) => (
                                     <Input
                                         {...inputProps}
@@ -112,11 +144,13 @@ const Contact = () => {
                                 rows={7}
                                 borderRadius="7px"
                                 padding="15px 20px"
+                                onChange={handleChange}
                             />
 
                             <Button
                                 onClick={notify}
-                                onSubmit={handleSubmit}
+                                onSubmit={(e) => handleSubmit(e)}
+                                disabled={!formData.name || !formData.surname || !formData.phone || !formData.message}
                                 className="w-full py-4 rounded-md text-[white] bg-red hover:bg-[#611a17] transition-all"
                                 type="submit"
                             >
@@ -171,12 +205,12 @@ const Contact = () => {
             </Box>
             <div className="container w-[84%] max-2xl:w-[90%] mb-20 h-[500px]">
                 <iframe
-                    src="https://yandex.uz/map-widget/v1/-/CDTDqZpD"
+                    src={mapSrc}
                     width="100%"
                     height="100%"
                     frameBorder="0"
                     loading="lazy"
-                    allow={true}
+                    allow="true"
                     className="border border-[#c4c4c4] rounded-xl drop-shadow-lg"
                 ></iframe>
             </div>

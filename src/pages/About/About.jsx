@@ -62,9 +62,9 @@ const About = () => {
                     <Box textAlign="justify" maxWidth="2xs">
                         <h2 className="font-semibold text-4xl text-center mx-auto my-10">
                             {t("about.block2.mainTitle")}
-                            <h2 className="text-red mt-4">
+                            <span className="text-red mt-4">
                                 {t("about.block2.mainTitleRed")}
-                            </h2>
+                            </span>
                         </h2>
 
                         <Text mb="40" lineHeight="2">

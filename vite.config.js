@@ -14,7 +14,11 @@ export default defineConfig({
 	},
 	resolve: {
 		alias: {
-			"@": fileURLToPath(new URL("./src", import.meta.url)), // '@' is now an alias to './src'
+			"@": fileURLToPath(new URL("./src", import.meta.url)),
 		},
 	},
+
+    server: {
+        historyApiFallback: true,
+    },
 });
