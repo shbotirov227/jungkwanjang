@@ -16,43 +16,32 @@ const Contact = () => {
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
-    console.log(handleChange)
+    // console.log(handleChange)
 
     const notify = () => toast.success("Xabar yuborildi !")
 
+
+    // fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
     const handleSubmit = (e) => {
         e.preventDefault();
-        const chatId = "5384683708";
-        const botToken = "7812609734:AAG1okGo7SQVTLyk2Nndo_b83eU7Bv18W3w";
-        const message = `
-            Foydalanuvchi Ma'lumotlari:
-            Ism: ${formData.name}
-            Familiya: ${formData.surname}
-            Telefon: ${formData.phone}
-            Xabar: ${formData.message}
-        `;
 
-        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        fetch("https://jungkwanjang-backend.vercel.app/send-message", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: message,
-                parse_mode: "HTML",
-            }),
+            body: JSON.stringify(formData),
         })
             .then((response) => response.json())
             .then((data) => {
-                if (data.ok) {
+                if (data.message) {
                     toast.success("Xabar yuborildi!");
-                    setFormData({ name: "", surname: "", message: "" });
+                    setFormData({ name: "", surname: "", phone: "", message: "" });
                 } else {
-                    alert("Xabar yuborishda xato!");
+                    toast.error("Xabar yuborishda xato!");
                 }
             })
-            .catch((error) => toast.error("Error:", error));
+            .catch((error) => toast.error("Xato:", error));
     };
 
     return (
@@ -65,7 +54,7 @@ const Contact = () => {
                 >
                     <Heading as="h3" className="mb-4 font-semibold text-lg">{t("contact.heading")}</Heading>
                     <Text as="p" className=" m-auto text-xs text-center">
-                    {t("contact.description")}
+                        {t("contact.description")}
                     </Text>
                     <div className="p-6 bg-gray-100 max-w-lg mx-auto">
                         <form onSubmit={handleSubmit} className="space-y-4">
@@ -94,7 +83,6 @@ const Contact = () => {
                                 />
                             </div>
 
-                            {/* Telefon raqami */}
                             <InputMask mask="+\9\9\8 (99) 999-99-99">
                                 {(inputProps) => (
                                     <Input

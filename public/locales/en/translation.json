@@ -254,5 +254,102 @@
         "telegram": "https://t.me/tmrtgl",
         "instagram": "https://www.instagram.com/jungkwanjanguzb",
         "whatsapp": "/"
+    },
+
+    "products": {
+        "product1": {
+            "title": "More About Hong Sam Won",
+            "descriptionTitle": "Hong Sam Won",
+            "description": "Hong Sam Won is a natural beverage made from Korean red ginseng that helps boost your daily energy levels and strengthen your immune system. This drink is developed based on the principles of ancient Eastern medicine and contains high-quality ingredients.",
+            "ingredientsTitle": "Main Ingredients:",
+            "ingredients": [
+                "6-year-old Korean red ginseng: helps restore energy and reduce stress.",
+                "Herbal extracts: natural supplements to enhance the immune system.",
+                "Honey and cinnamon: enhance the taste and provide warmth to the body."
+            ],
+            "compositionTitle": "Composition:",
+            "composition": "Purified water, Isomalt-oligosaccharide, Mixed herbal extract (1.85%) (Spices (ginseng), ginger, cinnamon, goji berries), Dextrin, Malt extract (barley), Korean red ginseng extract (0.36%), Flavoring agents, Acidity regulator (Citric acid).",
+            "usageTitle": "Usage:",
+            "usage": "Take 1 packet per day.",
+            "attentionTitle": "Attention:",
+            "attention": "Store the product in a cool, dry place, away from direct sunlight and heat. Carefully check all ingredients for allergies and interactions. The product may have harmless sediment, which does not affect its quality and effectiveness. Once opened, consume the product quickly. Do not microwave.",
+            "benefitsTitle": "Benefits:",
+            "benefits": [
+                "Energy recovery: Hong Sam Won helps reduce fatigue and maintain activity throughout the day.",
+                "Immune system support: The natural properties of red ginseng support your health.",
+                "Natural energy: Free from artificial colorants and preservatives."
+            ],
+            "targetTitle": "Who is it for?",
+            "target": "Hong Sam Won is the perfect choice for anyone who needs energy throughout the day. Especially recommended for people with a busy lifestyle, athletes, and those supporting a healthy lifestyle.",
+            "howToDrinkTitle": "How to Drink?",
+            "howToDrink": "You can drink 1-2 servings per day, before or after meals. It can be consumed hot or cold.",
+            "whyThisProductTitle": "Why Hong Sam Won?",
+            "whyThisProduct": "This drink, developed based on 120 years of experience with Korean red ginseng, is an ideal choice for those who want to lead a natural and healthy lifestyle."
+        },
+
+        "product2": {
+            "title": "Detailed Information about Pomegranate Stick Red Ginseng Extract",
+            "descriptionTitle": "The Perfect Blend of Beauty and Energy",
+            "description": "Pomegranate Stick is enriched with red ginseng extract, providing a natural solution to enhance health and maintain beauty. This product combines the natural antioxidant properties of pomegranate with the energy-boosting effects of Korean red ginseng.",
+            "ingredientsTitle": "Main Ingredients:",
+            "ingredients": [
+                "Pomegranate Extract: Rich in natural antioxidants and vitamins, it enhances skin radiance.",
+                "6-Year-Old Korean Red Ginseng Extract: Helps boost immunity and reduce fatigue.",
+                "Natural Fruit Juices and Nutritional Supplements: Adds a delicious taste to the product."
+            ],
+            "compositionTitle": "Composition:",
+            "composition": "Purified Water, Pomegranate Extract (30.205%), Korean Red Ginseng Extract (0.2%)",
+            "usageTitle": "How to Use:",
+            "usage": "Take 1 stick per day.",
+            "attentionTitle": "Caution:",
+            "attention": "Carefully check the ingredients for allergies and interactions. Store in a cool, dry place, away from sunlight and humidity. Consume immediately after opening. Do not heat in the microwave. Be cautious with sharp edges.",
+            "benefitsTitle": "Benefits:",
+            "benefits": [
+                "Boosting Immunity: The powerful natural combination of red ginseng and pomegranate protects the body.",
+                "Antioxidant Properties: Fights free radicals, ensuring the body remains youthful and healthy.",
+                "Energy and Vitality Source: Increases activity and reduces fatigue in daily life.",
+                "Healthy Skin: Makes skin firm and radiant."
+            ],
+            "targetTitle": "Who is it for?",
+            "target": "Pomegranate Stick with red ginseng is designed for people who care about their health and want to maintain a youthful and healthy appearance. Especially beneficial for busy individuals, mothers, and athletes.",
+            "howToDrinkTitle": "How to Drink?",
+            "howToDrink": "You can take 1-2 sticks directly or mix them with water. The product is convenient to consume at any time.",
+            "whyThisProductTitle": "Why Pomegranate Stick with Red Ginseng?",
+            "whyThisProduct": "This product, combining ancient ginseng therapy and the beneficial properties of pomegranate, supports your daily health and beauty."
+        },
+
+        "product3": {
+            "title": "Everytime V Details",
+            "descriptionTitle": "A natural solution for energy and health every day",
+            "description": "Everytime V is a special product made from Korean red ginseng extract, designed to support daily energy and health. Convenient and compact, this product is the ideal choice for people with busy lifestyles.",
+            "ingredientsTitle": "Main Ingredients:",
+            "ingredients": [
+                "6-year-old Korean red ginseng extract: A high-quality ingredient to boost energy, strength, and immune system.",
+                "Vitamins and minerals: Enriched with essential nutrients for the body.",
+                "Natural ingredients: No artificial additives, pure and natural composition."
+            ],
+            "compositionTitle": "Composition:",
+            "composition": "Pure water, Korean red ginseng extract (9.9%), fructooligosaccharides",
+            "usageTitle": "Usage:",
+            "usage": "Take 1 stick (packet) daily.",
+            "attentionTitle": "Attention:",
+            "attention": "Check each ingredient carefully for allergies and interactions. Store in a cool, dry place away from sunlight and moisture. Any harmful sediment may appear but does not affect the function or quality of the product. Open the stick carefully to avoid spillage. Consume immediately after opening. Do not heat in a microwave. Be cautious of torn edges.",
+            "benefitsTitle": "Benefits:",
+            "benefits": [
+                "Energy restoration: Helps you stay active and productive every day.",
+                "Immune system strengthening: Protects the body and helps fight off illnesses.",
+                "Stress reduction: The natural properties of red ginseng help lower stress levels.",
+                "Convenient consumption: Easy to use anytime, anywhere."
+            ],
+            "targetTitle": "Who is it for?",
+            "target": "Everytime V is designed for those who want to feel energized and healthy every day. Especially recommended for busy individuals, travelers, and athletes.",
+            "howToDrinkTitle": "How to consume?",
+            "howToDrink": "Open 1 stick daily and consume directly or mix with water. It is recommended to drink it in the morning or throughout the day.",
+            "whyThisProductTitle": "Why Everytime V?",
+            "whyThisProduct": "Everytime V is the perfect solution for a busy lifestyle, offering the best features of Korean red ginseng in a convenient form. It provides you with energy and strength throughout the day, helping to maintain your health."
+        },
+        
+        "notFound": "Product not found",
+        "backToProducts": "Back to products"
     }
 }

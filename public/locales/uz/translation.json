@@ -250,5 +250,101 @@
         "telegram": "https://t.me/tmrtgl",
         "instagram": "https://www.instagram.com/jungkwanjanguzb",
         "whatsapp": "/"
+    },
+
+    "products": {
+        "product1": {
+            "title": "Hong Sam Won haqida batafsil",
+            "descriptionTitle": "Hong Sam Won",
+            "description": "Hong Sam Won - bu Koreya qizil jenshenidan tashkil topgan tabiiy ichimlik bo'lib, u sizning kunlik energiyangizni oshirish va immunitet tizimingizni mustahkamlashga yordam beradi. Ushbu ichimlik qadimiy Sharq tabobatining tamoyillariga asoslangan holda ishlab chiqilgan bo'lib, yuqori sifatli ingredientlarni o'z ichiga oladi.",
+            "ingredientsTitle": "Asosiy tarkibi:",
+            "ingredients": [
+                "6-yillik Koreya qizil jensheni: Energiya tiklash va stressni kamaytirishda yordam beradi.",
+                "O'simlik ekstraktlari: Immunitetni oshirish uchun tabiiy qo'shimchalar.",
+                "Asal va dolchin: Ta'mni boyitish va tanani iliqlik bilan ta'minlash uchun."
+            ],
+            "compositionTitle": "Tarkibi:",
+            "composition": "Tozalangan suv, Izomalt-oligosakxarid, Aralash o‘simlik ekstrakti (1.85%) (Ziravor (jenshen), zanjabil, dolchin, goji mevalari), Deksitrin, Malt ekstrakti (arpa), Koreya qizil jenshen ekstrakti (0.36%), Aroma beruvchi moddalar, Kislotalilikni tartibga soluvchi (Limon kislotasi).",
+            "usageTitle": "Qo'llanishi:",
+            "usage": "Kuniga 1 dona paketcha iste’mol qiling.",
+            "attentionTitle": "Diqqat:",
+            "attention": "Mahsulotni quyosh nuri va issiqdan uzoq, salqin va quruq joyda saqlang. Har bir tarkibiy qismini ehtiyotkorlik bilan allergiya va o‘zaro ta’sirlar uchun tekshiring. Mahsulotda zararsiz cho‘kma paydo bo‘lishi mumkin, bu mahsulotning sifati va samaradorligiga ta’sir qilmaydi. Paket ochilganidan so‘ng tezda iste’mol qiling. Paketni mikroto‘lqinli pechda qizdirmang.",
+            "benefitsTitle": "Foydalari:",
+            "benefits": [
+                "Energiya tiklash: Hong Sam Won charchoqni kamaytirib, kun davomida faollikni saqlashga yordam beradi.",
+                "Immunitetni mustahkamlash: Qizil jenshenning tabiiy xususiyatlari sizning sog'lig'ingizni qo'llab-quvvatlaydi.",
+                "Tabiiy quvvat: Hech qanday sun'iy rang beruvchi yoki konservantlarsiz."
+            ],
+            "targetTitle": "Kimlar uchun mos?",
+            "target": "Hong Sam Won kun davomida energiyaga muhtoj bo'lgan har qanday inson uchun mukammal tanlovdir. Ayniqsa, ish bilan band insonlar, sportchilar va sog'lom turmush tarzini qo'llab-quvvatlovchilar uchun tavsiya etiladi.",
+            "howToDrinkTitle": "Qanday iste'mol qilinadi?",
+            "howToDrink": "Kuniga 1-2 dona ichimlikni ovqatdan oldin yoki keyin ichishingiz mumkin. Uni issiq yoki sovuq holda iste’mol qilish mumkin.",
+            "whyThisProductTitle": "Nima uchun Hong Sam Won?",
+            "whyThisProduct": "Koreya qizil jenshenining 120 yillik tajribasi asosida ishlab chiqarilgan ushbu ichimlik tabiiy va sog'lom hayot kechirishni istagan insonlar uchun ideal tanlovdir."
+        },
+
+        "product2": {
+            "title": "Pomegranate Stick qizil jenshen ekstrakti haqida batafsil",
+            "descriptionTitle": "Go'zallik va quvvatning mukammal uyg'unligi",
+            "description": "Pomegranate Stick qizil jenshen ekstrakti bilan boyitilgan bo'lib, u salomatlikni mustahkamlash va go'zallikni saqlash uchun tabiiy yechimdir. Ushbu mahsulot anorning tabiiy antioksidant xususiyatlari va Koreya qizil jenshenining energiya beruvchi ta'sirini birlashtiradi.",
+            "ingredientsTitle": "Asosiy tarkibi:",
+            "ingredients": [
+                "Anor ekstrakti: Tabiiy antioksidantlar va vitaminlarga boy, terining yorqinligini oshiradi.",
+                "6-yillik Koreya qizil jenshen ekstrakti: Immunitetni mustahkamlash va charchoqni kamaytirishda yordam beradi.",
+                "Tabiiy meva sharbati va ozuqaviy qo'shimchalar: Mahsulotning mazali ta'mini ta'minlaydi."
+            ],
+            "compositionTitle": "Tarkibi:",
+            "composition": "Tozalangan suv, anor ekstrakti (30.205%), Koreya qizil jenshen ekstrakti (0.2%)",
+            "usageTitle": "Qo'llanishi:",
+            "usage": "Kuniga 1 stick (tayoqcha)ni qabul qiling.",
+            "attentionTitle": "Diqqat:",
+            "attention": "Har bir tarkibni allergiyalar va boshqa ta'sirlar uchun diqqat bilan tekshiring. Quyosh nuri va namlikdan himoya qilinadigan salqin, quruq joyda saqlang. Tayyorlangan ta'sir vositasini ochayotganda ehtiyot bo'ling va zudlik bilan iste'mol qiling. Mikroto'lqinli pechda isitishdan saqlaning. Kesuvchi qirralarga diqqat qiling.",
+            "benefitsTitle": "Foydalari:",
+            "benefits": [
+                "Immunitetni mustahkamlash: Qizil jenshen va anorning kuchli tabiiy tarkibi organizmni himoya qiladi.",
+                "Antioksidant xususiyatlar: Erkin radikallarga qarshi kurashib, tananing yosh va sog'lom bo'lishini ta'minlaydi.",
+                "Energiya va quvvat manbai: Kundalik hayotda faollikni oshiradi va charchoqni kamaytiradi.",
+                "Sog'lom teri: Teringizni elastik va yorqin qiladi."
+            ],
+            "targetTitle": "Kimlar uchun mos?",
+            "target": "Pomegranate Stick qizil jenshen bilan, sog'lig'iga e'tibor beradigan, yosh va sog'lom ko'rinishni saqlashni istagan insonlar uchun mo'ljallangan. Ish bilan band insonlar, onalar va sportchilar uchun ayniqsa foydali.",
+            "howToDrinkTitle": "Qanday iste'mol qilinadi?",
+            "howToDrink": "Kuniga 1-2 stickni to'g'ridan-to'g'ri iste'mol qilish yoki suvga aralashtirib ichishingiz mumkin. Mahsulotni har qanday vaqtda ichish qulay.",
+            "whyThisProductTitle": "Nima uchun Pomegranate Stick qizil jenshen?",
+            "whyThisProduct": "Koreyaning qadimiy jenshen tabobati va anorning zamonaviy foydali xususiyatlarini birlashtirgan ushbu mahsulot sizning kunlik sog'lig'ingizni va go'zalligingizni qo'llab-quvvatlaydi."
+        },
+
+        "product3": {
+            "title": "Everytime V haqida batafsil",
+            "descriptionTitle": "Har kuni quvvat va sog'lik uchun tabiiy yechim",
+            "description": "Everytime V – bu Koreya qizil jenshen ekstraktidan tayyorlangan maxsus mahsulot bo'lib, u kunlik energiya va sog'likni qo'llab-quvvatlash uchun mo'ljallangan. Qulay va ixcham shaklda ishlab chiqarilgan ushbu mahsulot band hayot tarzi bilan yashovchilar uchun ideal tanlovdir.",
+            "ingredientsTitle": "Asosiy tarkibi:",
+            "ingredients": [
+                "6-yillik Koreya qizil jenshen ekstrakti: Energiya, quvvat va immunitetni mustahkamlash uchun eng yuqori sifatli komponent.",
+                "Vitamin va minerallar: Tana uchun zarur bo'lgan ozuqaviy moddalar bilan boyitilgan.",
+                "Tabiiy ingredientlar: Sun'iy qo'shimchalarsiz, sof va tabiiy tarkib."
+            ],
+            "compositionTitle": "Tarkibi:",
+            "composition": "Toza suv, Koreys qizil jenshen ekstrakti (9.9%), fruktooligosakkarid",
+            "usageTitle": "Qo'llanishi:",
+            "usage": "Kuniga 1 stick (tayoqcha)ni qabul qiling.",
+            "attentionTitle": "Diqqat:",
+            "attention": "Har bir tarkibiy qismini allergiyalarga va o'zaro ta'sirlarga qarab diqqat bilan tekshiring. Quyosh va namlikdan saqlanish uchun salqin, quruq joyda saqlang. Har qanday zararli cho'kma paydo bo'lishi mumkin, bu mahsulotning funksiyasi yoki sifatiga ta'sir qilmaydi. Stickni ehtiyotkorlik bilan oching, to'kilmasligi uchun. Ochiq holda tezda iste'mol qiling. Stickni mikroto'lqinli pechda qizdirmang. Yirtilgan qirralarga ehtiyot bo'ling.",
+            "benefitsTitle": "Foydalari:",
+            "benefits": [
+                "Energiya tiklash: Har kuni faol va samarali bo'lishingizga yordam beradi.",
+                "Immunitetni mustahkamlash: Organizmni himoya qiladi va kasalliklarga qarshi kurashishga yordam beradi.",
+                "Stressni kamaytirish: Qizil jenshenning tabiiy xususiyatlari stress darajasini pasaytiradi.",
+                "Qulay iste'mol: Har qanday vaqtda va har joyda foydalanish uchun qulay."
+            ],
+            "targetTitle": "Kimlar uchun mos?",
+            "target": "Everytime V mahsuloti har kuni o'zini quvvatli va sog'lom his qilishni istagan insonlar uchun mo'ljallangan. Ayniqsa, ish bilan band insonlar, sayohatchilar va sportchilar uchun tavsiya etiladi.",
+            "howToDrinkTitle": "Qanday iste'mol qilinadi?",
+            "howToDrink": "Har kuni 1 stickni ochib, to'g'ridan-to'g'ri iste'mol qiling yoki suvga qo'shib iching. Mahsulotni ertalab yoki kun davomida ichish tavsiya etiladi.",
+            "whyThisProductTitle": "Nima uchun Everytime V?",
+            "whyThisProduct": "Koreya qizil jenshenining eng yaxshi xususiyatlarini qulay shaklda taqdim etuvchi Everytime V mahsuloti band hayot tarzi uchun ideal yechimdir. U sizga kun davomida energiya va quvvat bag'ishlaydi, sog'lig'ingizni saqlashga yordam beradi."
+        },
+        "notFound": "Mahsulot topilmadi",
+        "backToProducts": "Mahsulotlarga qaytish"
     }
 }

@@ -15,7 +15,7 @@ const Footer = () => {
                 <Box className="w-[50%] max-sm: max-md: max-lg:w-full max-lg:text-center max-lg:mb-10 max-xl:w-[45%]">
                     <Image className="w-[50%] max-lg:m-auto max-lg:mb-10 mb-8" src={Img} alt="footer-logo" />
 
-                    <Text className="max-xl:w-[80%] max-lg:w-[100%] max-lg:grid-cols-2" as="p" w="60%" fontSize="smaller" color="white">
+                    <Text className="max-xl:w-[80%] max-lg:w-[100%] max-lg:grid-cols-2" as="h3" w="60%" fontSize="smaller" color="white">
                         {t("footer.text1")}
                         <Text as="p" className="mt-5">
                             {t("footer.text2")}
@@ -26,7 +26,7 @@ const Footer = () => {
                 <div className="max-lg:flex max-md:flex-wrap w-full flex justify-around">
                     <Box className="w-[45%] max-sm: max-md:text-center max-md:m-auto max-lg:w-[100%] max-xl:w-[55%]">
                         <Heading as="h4" fontWeight="700" mb="20" color="white">{t("footer.title1")}</Heading>
-                        <Text className="max-sm:justify-center max-sm:items-center max-md:justify-center" as="p" display="flex" alignItems="center" fontSize="smaller" color="white" mb="15">
+                        <Text className="max-sm:justify-center max-sm:items-center max-md:justify-center" as="h3" display="flex" alignItems="center" fontSize="smaller" color="white" mb="15">
                             <FaLocationDot size={15} className="mr-3" />
                             <Link target="_blank" href="https://yandex.uz/maps/-/CDTDqZpD">
                                 {t("footer.link1")}

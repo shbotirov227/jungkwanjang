@@ -18,8 +18,8 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const botToken = "7812609734:AAG1okGo7SQVTLyk2Nndo_b83eU7Bv18W3w";
-        const chatId = "1392023049";
+        const botToken = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
+        const chatId = process.env.REACT_APP_TELEGRAM_CHAT_ID;
 
         const message = `
             Foydalanuvchi Ma'lumotlari:
@@ -41,7 +41,7 @@ const Contact = () => {
         })
             .then((response) => {
                 response.json()
-                console.log(response.json());
+                // console.log(response.json());
             })
             .then((data) => {
                 if (data.ok) {
@@ -92,7 +92,6 @@ const Contact = () => {
                                 />
                             </div>
 
-                            {/* Telefon raqami */}
                             <InputMask mask="+\9\9\8 (99) 999-99-99">
                                 {(inputProps) => (
                                     <Input
@@ -112,7 +111,6 @@ const Contact = () => {
                                 )}
                             </InputMask>
 
-                            {/* Xabar yozish uchun textarea */}
                             <Textarea
                                 required={true}
                                 className="w-full"
