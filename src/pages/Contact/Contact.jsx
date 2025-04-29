@@ -53,7 +53,7 @@ const Contact = () => {
 
         const chatId = import.meta.env.VITE_CHAT_ID;
 
-        fetch(`http://jungkwanjang-backend.vercel.app/send-message`, {
+        fetch(`https://jungkwanjang-backend.onrender.com/send-message`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ chat_id: chatId, formData }),
