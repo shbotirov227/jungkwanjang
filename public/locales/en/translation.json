@@ -351,5 +351,12 @@
         
         "notFound": "Product not found",
         "backToProducts": "Back to products"
+    },
+    "toast": {
+        "success": "Your message has been sent successfully!",
+        "error": "An error occurred while sending the message. Please try again.",
+        "emptyFields": "Please fill in all required fields!",
+        "invalidPhone": "Please enter a complete phone number!",
+        "errorServer": "A server error occurred. Please try again later."
     }
 }

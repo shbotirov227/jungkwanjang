@@ -346,5 +346,12 @@
         },
         "notFound": "Mahsulot topilmadi",
         "backToProducts": "Mahsulotlarga qaytish"
+    },
+    "toast": {
+        "success": "Xabar muvaffaqiyatli yuborildi !",
+        "error": "Xabar yuborishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring.",
+        "emptyFields": "Iltimos, barcha maydonlarni to'ldiring !",
+        "invalidPhone": "Iltimos, telefon raqamini to'liq kiriting !",
+        "errorServer": "Server bilan bog'lanishda xatolik yuz berdi. Iltimos, qayta urinib ko'ring."
     }
 }

@@ -1,58 +1,133 @@
+/* eslint-disable no-nonoctal-decimal-escape */
+/* eslint-disable react/no-unescaped-entities */
 import { useState } from 'react';
 import InputMask from 'react-input-mask';
-import { Box, Button, FormControl, FormHelperText, FormLabel, Heading, Image, Input, Link, Text, Textarea } from "@chakra-ui/react";
-import { Form } from "react-router-dom";
+import {
+    Box, Button,
+    // FormControl, FormHelperText, FormLabel,
+    Heading, Image, Input, Link, Text, Textarea
+} from "@chakra-ui/react";
+// import { Form } from "react-router-dom";
 import Img from "@/assets/contact-img.avif"
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot, FaPhone, FaXTwitter } from "react-icons/fa6";
 import { SiInstagram, SiTelegram, SiWhatsapp } from "react-icons/si";
+import { toast } from "react-toastify";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        message: ""
+    })
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setFormData((prevData) => ({ ...prevData, [name]: value }));
+        setFormData((prev) => ({ ...prev, [name]: value }));
     };
+
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+
+    //     const chatId = import.meta.env.CHAT_ID;
+
+    //     fetch(`http://localhost:5000/send-message`, {
+    //         method: "POST",
+    //         headers: { "Content-Type": "application/json" },
+    //         body: JSON.stringify({
+    //             chat_id: chatId,
+    //             formData
+    //         }),
+    //     })
+    //         .then((res) => res.json())
+    //         .then((data) => {
+    //             if (data.ok) {
+    //                 toast.success("Xabar yuborildi!", {
+    //                     position: "top-right",
+    //                     autoClose: 2000,
+    //                     hideProgressBar: false,
+    //                     closeOnClick: true,
+    //                     pauseOnHover: true,
+    //                     draggable: true,
+    //                     progress: undefined,
+    //                 });
+    //                 setFormData({ firstName: "", lastName: "", phone: "", message: "" });
+    //             } else {
+    //                 toast.error("Xabar yuborishda xato!", {
+    //                     position: "top-right",
+    //                     autoClose: 2000,
+    //                     hideProgressBar: false,
+    //                     closeOnClick: true,
+    //                     pauseOnHover: true,
+    //                     draggable: true,
+    //                     progress: undefined,
+    //                 });
+    //             }
+    //         })
+    //         .catch((error) => console.error("Error:", error));
+    // };
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const botToken = process.env.REACT_APP_TELEGRAM_BOT_TOKEN;
-        const chatId = process.env.REACT_APP_TELEGRAM_CHAT_ID;
+        const { firstName, lastName, phone, message } = formData;
+        
+        // Check if all fields are filled
+        if (!firstName || !lastName || !phone || !message) {
+            toast.error("Iltimos, barcha maydonlarni to'ldiring!", {
+                position: "top-center",
+                autoClose: 2000,
+                delay: 200,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
 
-        const message = `
-            Foydalanuvchi Ma'lumotlari:
-            Ism: ${formData.name}
-            Email: ${formData.email}
-            Xabar: ${formData.message}
-        `;
+            });
+            return;
+        }
 
-        fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+        if (phone.replace(/[^0-9]/g, "").length !== 12) {
+            toast.error("Iltimos, telefon raqamini to'liq kiriting!");
+            return;
+        }
+
+        const chatId = import.meta.env.VITE_CHAT_ID;
+
+        fetch(`http://localhost:5000/send-message`, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({
-                chat_id: chatId,
-                text: message,
-                parse_mode: "HTML",
-            }),
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: chatId, formData }),
         })
-            .then((response) => {
-                response.json()
-                // console.log(response.json());
-            })
+            .then((res) => res.json())
             .then((data) => {
                 if (data.ok) {
-                    alert("Xabar yuborildi!");
-                    setFormData({ name: "", email: "", message: "" });
+                    toast.success("Xabar yuborildi!", {
+                        position: "top-center",
+                        autoClose: 2000,
+                        delay: 200
+                    });
+                    setFormData({ firstName: "", lastName: "", phone: "", message: "" });
                 } else {
-                    alert("Xabar yuborishda xato!");
+                    toast.error("Xabar yuborishda xato!", {
+                        position: "top-center",
+                        autoClose: 2000,
+                        delay: 200
+                    });
                 }
             })
-            .catch((error) => console.error("Error:", error));
+            .catch((error) => {
+                console.error("Error:", error);
+                toast.error("Server bilan ulanishda xatolik yuz berdi!", {
+                    position: "top-center",
+                    autoClose: 2000,
+                    delay: 200
+                });
+            });
     };
+
 
     return (
         <div className="container">
@@ -64,10 +139,10 @@ const Contact = () => {
                         Our support representative will check your message within 24 business hour's time frame.
                     </Text>
                     <div className="p-6 bg-gray-100 max-w-lg mx-auto">
-                        <form onSubmit={handleSubmit} action="" className="space-y-4">
+                        <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="flex gap-4">
                                 <Input
-                                    required={true}
+                                    // required
                                     className="w-full"
                                     placeholder="First Name"
                                     variant="outline"
@@ -77,9 +152,12 @@ const Contact = () => {
                                     borderRadius="7px"
                                     padding="10px 20px"
                                     outline="none"
+                                    name="firstName"
+                                    value={formData.firstName}
+                                    onChange={handleChange}
                                 />
                                 <Input
-                                    required={true}
+                                    // required
                                     className="w-full"
                                     placeholder="Last Name"
                                     variant="outline"
@@ -89,14 +167,20 @@ const Contact = () => {
                                     borderRadius="7px"
                                     padding="10px 20px"
                                     outline="none"
+                                    name="lastName"
+                                    value={formData.lastName}
+                                    onChange={handleChange}
                                 />
                             </div>
 
-                            <InputMask mask="+\9\9\8 (99) 999-99-99">
+                            <InputMask mask="+\9\9\8 (99) 999-99-99"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}>
                                 {(inputProps) => (
                                     <Input
                                         {...inputProps}
-                                        required={true}
+                                        // required
                                         className="w-full"
                                         type="tel"
                                         placeholder="Phone Number"
@@ -107,12 +191,13 @@ const Contact = () => {
                                         borderRadius="7px"
                                         padding="10px 20px"
                                         outline="none"
+
                                     />
                                 )}
                             </InputMask>
 
                             <Textarea
-                                required={true}
+                                // required
                                 className="w-full"
                                 placeholder="Your Message"
                                 outline="none"
@@ -122,9 +207,17 @@ const Contact = () => {
                                 rows={7}
                                 borderRadius="7px"
                                 padding="15px 20px"
+                                name="message"
+                                value={formData.message}
+                                onChange={handleChange}
                             />
 
-                            <Button onSubmit={handleSubmit} className="w-full py-4 rounded-md text-[white] bg-red hover:bg-[#611a17] transition-all" type="submit">Submit</Button>
+                            <Button
+                                type="submit"
+                                className="w-full py-4 rounded-md text-[white] bg-red hover:bg-[#611a17] transition-all"
+                            >
+                                Submit
+                            </Button>
                         </form>
                     </div>
                 </Box>
@@ -178,17 +271,11 @@ const Contact = () => {
                     height="100%"
                     frameBorder="0"
                     loading="lazy"
-                    allow={true}
+                    allow="true"
                     className="border border-[#c4c4c4] rounded-xl drop-shadow-lg"
                 ></iframe>
-                
+
             </div>
-            {/* <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder="Ismingiz" value={formData.name} onChange={handleChange} required />
-                <input type="email" name="email" placeholder="Emailingiz" value={formData.email} onChange={handleChange} required />
-                <textarea name="message" placeholder="Xabaringiz" value={formData.message} onChange={handleChange} required />
-                <button type="submit">Yuborish</button>
-            </form> */}
         </div>
     );
 };

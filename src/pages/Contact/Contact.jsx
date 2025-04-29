@@ -1,78 +1,96 @@
 import { useRef, useState } from 'react';
 import InputMask from 'react-input-mask';
-import { Box, Button, Heading, Image, Input, Link, Text, Textarea } from "@chakra-ui/react";
+import { Box, Button, FormLabel, Heading, Image, Input, Link, Text, Textarea } from "@chakra-ui/react";
 import { IoMdMail } from "react-icons/io";
 import { FaLocationDot, FaPhone, FaXTwitter } from "react-icons/fa6";
 import { SiInstagram, SiTelegram, SiWhatsapp } from "react-icons/si";
 import Img from "@/assets/contact-img.avif";
 import { useTranslation } from "react-i18next";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
 const mapSrc = "https://yandex.uz/map-widget/v1/-/CDTDqZpD";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({ name: "", surname: "", phone: "", message: "" });
     const { t } = useTranslation();
     const inputRef = useRef(null);
-    
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        phone: "",
+        message: ""
+    })
+
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
-    const notify = () => toast.success("Xabar yuborildi !", {
-        position: "top-center",
-        delay: 2000
-    });
-
-    const isValidForm = () => {
-        if (!formData.name || !formData.surname || !formData.phone || !formData.message) {
-            toast.error("Barcha maydonlarni to'ldiring!");
-            return false;
-        }
-        if (!/^\+\d{12}$/.test(formData.phone)) {
-            toast.error("Telefon raqami noto'g'ri!");
-            return false;
-        }
-        return true;
-    };
-
-    // fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
     const handleSubmit = (e) => {
         e.preventDefault();
-        if (!isValidForm()) return;
 
-        fetch("https://jungkwanjang-backend.vercel.app/send-message", {
+        const { firstName, lastName, phone, message } = formData;
+
+        // Check if all fields are filled
+        if (!firstName || !lastName || !phone || !message) {
+            toast.error(t("toast.emptyFields"), {
+                position: "top-center",
+                autoClose: 2000,
+                delay: 200,
+                pauseOnHover: true,
+            });
+            return;
+        }
+
+        if (phone.replace(/[^0-9]/g, "").length !== 12) {
+            toast.error(t("toast.invalidPhone"), {
+                position: "top-center",
+                autoClose: 2000,
+                delay: 200,
+                pauseOnHover: true,
+            });
+            return;
+        }
+
+        const chatId = import.meta.env.VITE_CHAT_ID;
+
+        fetch(`http://jungkwanjang-backend.vercel.app/send-message`, {
             method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(formData),
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ chat_id: chatId, formData }),
         })
-            .then((response) => response.json())
+            .then((res) => res.json())
             .then((data) => {
-                if (data.message) {
-                    toast.success("Xabar yuborildi!", {
+                if (data.ok) {
+                    toast.success(t("toast.success"), {
                         position: "top-center",
-                        delay: 2000
+                        autoClose: 2000,
+                        delay: 200,
+                        pauseOnHover: true,
                     });
-                    setFormData({ name: "", surname: "", phone: "", message: "" });
+                    setFormData({ firstName: "", lastName: "", phone: "", message: "" });
                 } else {
-                    toast.error("Xabar yuborishda xato!", {
+                    toast.error(t("toast.error"), {
                         position: "top-center",
-                        delay: 2000
+                        autoClose: 2000,
+                        delay: 200,
+                        pauseOnHover: true,
                     });
                 }
             })
-            .catch((error) => toast.error("Xato:", error, {
-                position: "top-center",
-                delay: 2000
-            }));
+            .catch((error) => {
+                console.error("Error:", error);
+                toast.error(t("toast.errorServer"), {
+                    position: "top-center",
+                    autoClose: 2000,
+                    delay: 200,
+                    pauseOnHover: true,
+                });
+            });
     };
+
 
     return (
         <div className="container">
-            <ToastContainer />
             <Box className="flex flex-wrap justify-center gap-10 py-12">
                 <Box
                     className="max-2xl:w-[50%] max-xl:w-[70%] max-md:w-[85%] w-[50%] text-center rounded-lg p-6 border border-[#c4c4c4] shadow-lg"
@@ -85,72 +103,96 @@ const Contact = () => {
                     <div className="p-6 bg-gray-100 max-w-lg mx-auto">
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="flex gap-4 flex-col md:flex-row">
-                                <Input
-                                    required
-                                    className="w-full"
-                                    placeholder={t("contact.firstName")}
-                                    variant="outline"
-                                    border="1.5px solid #c4c4c4"
-                                    transition="all ease 0.3s"
-                                    _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
-                                    borderRadius="7px"
-                                    padding="10px 20px"
-                                    onChange={handleChange}
-                                />
-                                <Input
-                                    required
-                                    className="w-full"
-                                    placeholder={t("contact.lastName")}
-                                    variant="outline"
-                                    border="1.5px solid #c4c4c4"
-                                    transition="all ease 0.3s"
-                                    _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
-                                    borderRadius="7px"
-                                    padding="10px 20px"
-                                    onChange={handleChange}
-                                />
-                            </div>
-
-                            <InputMask
-                                ref={inputRef}
-                                mask="+\9\9\8 (99) 999-99-99"
-                                onChange={handleChange}
-                            >
-                                {(inputProps) => (
+                                <Box>
+                                    <FormLabel htmlFor="firstName" className="text-sm font-normal text-gray-700 mb-2">{t("contact.firstName")}<span className="text-red text-lg">*</span></FormLabel>
                                     <Input
-                                        {...inputProps}
-                                        required
+                                        // required
+                                        id="firstName"
                                         className="w-full"
-                                        type="tel"
-                                        placeholder={t("contact.phoneNumber")}
+                                        placeholder={t("contact.firstName")}
                                         variant="outline"
                                         border="1.5px solid #c4c4c4"
                                         transition="all ease 0.3s"
                                         _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
                                         borderRadius="7px"
                                         padding="10px 20px"
+                                        name="firstName"
+                                        value={formData.firstName}
+                                        onChange={handleChange}
                                     />
-                                )}
-                            </InputMask>
+                                </Box>
+                                <Box>
+                                    <FormLabel htmlFor="lastName" className="text-sm font-normal text-gray-700 mb-2">{t("contact.lastName")}<span className="text-red text-lg">*</span></FormLabel>
+                                    <Input
+                                        // required
+                                        id="lastName"
+                                        className="w-full"
+                                        placeholder={t("contact.lastName")}
+                                        variant="outline"
+                                        border="1.5px solid #c4c4c4"
+                                        transition="all ease 0.3s"
+                                        _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
+                                        borderRadius="7px"
+                                        padding="10px 20px"
+                                        name="lastName"
+                                        value={formData.lastName}
+                                        onChange={handleChange}
+                                    />
+                                </Box>
+                            </div>
 
-                            <Textarea
-                                required
-                                className="w-full"
-                                placeholder={t("contact.messagePlaceholder")}
-                                outline="none"
-                                border="1.5px solid #c4c4c4"
-                                transition="all ease 0.3s"
-                                _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
-                                rows={7}
-                                borderRadius="7px"
-                                padding="15px 20px"
-                                onChange={handleChange}
-                            />
+                            <Box>
+                                <FormLabel htmlFor="phone" className="text-sm font-normal text-gray-700 mb-2">{t("contact.phoneNumber")}<span className="text-red text-lg">*</span></FormLabel>
+                                <InputMask
+                                    ref={inputRef}
+                                    // eslint-disable-next-line no-nonoctal-decimal-escape
+                                    mask="+\9\9\8 (99) 999-99-99"
+                                    id="phone"
+                                    name="phone"
+                                    value={formData.phone}
+                                    onChange={handleChange}
+                                >
+                                    {(inputProps) => (
+                                        <Input
+                                            {...inputProps}
+                                            // required
+                                            className="w-full"
+                                            type="tel"
+                                            placeholder={t("contact.phoneNumber")}
+                                            variant="outline"
+                                            border="1.5px solid #c4c4c4"
+                                            transition="all ease 0.3s"
+                                            _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
+                                            borderRadius="7px"
+                                            padding="10px 20px"
+                                        />
+                                    )}
+                                </InputMask>
+                            </Box>
+
+                            <Box>
+                                <FormLabel htmlFor="message" className="text-sm font-normal text-gray-700 mb-2">{t("contact.messagePlaceholder")}<span className="text-red text-lg">*</span></FormLabel>
+                                <Textarea
+                                    // required
+                                    id="message"
+                                    className="w-full"
+                                    placeholder={t("contact.messagePlaceholder")}
+                                    outline="none"
+                                    border="1.5px solid #c4c4c4"
+                                    transition="all ease 0.3s"
+                                    _focus={{ borderColor: "#323131", transform: "scale(1.05)" }}
+                                    rows={7}
+                                    borderRadius="7px"
+                                    padding="15px 20px"
+                                    name="message"
+                                    value={formData.message}
+                                    onChange={handleChange}
+                                />
+                            </Box>
 
                             <Button
-                                onClick={notify}
-                                onSubmit={(e) => handleSubmit(e)}
-                                disabled={!formData.name || !formData.surname || !formData.phone || !formData.message}
+                                onSubmit={(e) => console.log(e)}
+
                                 className="w-full py-4 rounded-md text-[white] bg-red hover:bg-[#611a17] transition-all"
                                 type="submit"
                             >
